@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neta Promise Tracker - Track Political Promises in India</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#" class="brand-link" onclick="showPage('home'); return false;">🗳️ Neta Promise Tracker</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#" class="nav-link active" onclick="showPage('home'); return false;">Home</a></li>
+                <li><a href="#" class="nav-link" onclick="showPage('about'); return false;">About</a></li>
+                <li><a href="#" class="nav-link" onclick="showPage('tracker'); return false;">Tracker</a></li>
+                <li><a href="#" class="nav-link" onclick="showPage('contact'); return false;">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HOME PAGE ==================== -->
+    <div id="home-page" class="page-content">
+        <!-- Hero Section -->
+        <section class="hero-gradient hero-section">
+            <div class="container hero-content">
+                <h1 class="hero-title animate-fade-up">Track Political Promises in India</h1>
+                <p class="hero-subtitle animate-fade-up" style="animation-delay: 100ms;">Neta ke vaade yaad rakho, proof ke saath. 🇮🇳</p>
+                <a href="#" class="btn-primary animate-fade-up" style="animation-delay: 200ms;" onclick="showPage('tracker'); return false;">
+                    Start Tracking
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="features-grid">
+                    <div class="feature-card animate-fade-up" style="animation-delay: 0ms;">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Track Promises</h3>
+                        <p class="feature-desc">Search and filter promises by state, district, and election year.</p>
+                    </div>
+
+                    <div class="feature-card animate-fade-up" style="animation-delay: 100ms;">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Verified Proof</h3>
+                        <p class="feature-desc">Every promise status backed by government & media sources.</p>
+                    </div>
+
+                    <div class="feature-card animate-fade-up" style="animation-delay: 200ms;">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3v18h18"/>
+                                <path d="m19 9-5 5-4-4-3 3"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Transparency Score</h3>
+                        <p class="feature-desc">See how many promises were actually fulfilled by leaders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container cta-content">
+                <h2 class="cta-title">Democracy Demands Accountability</h2>
+                <p class="cta-subtitle">Select your state, district, and election year to see what was promised — and what was delivered.</p>
+                <a href="#" class="btn-cta" onclick="showPage('tracker'); return false;">
+                    Explore Promises
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== ABOUT PAGE ==================== -->
+    <div id="about-page" class="page-content" style="display: none;">
+        <!-- Hero Section -->
+        <section class="hero-gradient about-hero">
+            <div class="container">
+                <h1 class="about-title">About Us</h1>
+                <p class="about-subtitle">We're a team of civic-minded developers building tools for democratic accountability.</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="container">
+                <!-- Mission Card -->
+                <div class="mission-card">
+                    <h2 class="mission-title">Our Mission</h2>
+                    <p class="mission-text">
+                        Neta Promise Tracker exists to bridge the gap between political promises and reality. In a democracy,
+                        citizens deserve to know whether the commitments made during election campaigns are being fulfilled. We
+                        collect manifesto data, track implementation progress, and provide verifiable proof — all in one place.
+                    </p>
+                </div>
+
+                <!-- Values Section -->
+                <h2 class="values-title">Our Values</h2>
+                <div class="values-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="m16 12-4-4-4 4M12 16V8"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Accountability</h3>
+                        <p class="feature-desc">We believe leaders must be held to the promises they make during elections.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Citizen Power</h3>
+                        <p class="feature-desc">Informed citizens are the backbone of a thriving democracy.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Transparency</h3>
+                        <p class="feature-desc">Every claim we make is backed by verifiable sources and proof.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==================== TRACKER PAGE ==================== -->
+    <div id="tracker-page" class="page-content" style="display: none;">
+        <!-- Hero Section -->
+        <div class="hero-gradient tracker-hero">
+            <div class="tracker-hero-content">
+                <h1 class="tracker-title">Promise Tracker</h1>
+                <p class="tracker-subtitle">Select your state, district and election year to see promises and their status.</p>
+            </div>
+        </div>
+
+        <!-- Filter Card -->
+        <div class="container" style="padding-top: 0;">
+            <div class="filter-card">
+                <div class="filter-grid">
+                    <div class="filter-group">
+                        <label>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            State
+                        </label>
+                        <select id="state-select" class="filter-select">
+                            <option value="">Select State</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="7" height="9" x="3" y="3" rx="1"/>
+                                <rect width="7" height="5" x="14" y="3" rx="1"/>
+                                <rect width="7" height="9" x="14" y="12" rx="1"/>
+                                <rect width="7" height="5" x="3" y="16" rx="1"/>
+                            </svg>
+                            District
+                        </label>
+                        <select id="district-select" class="filter-select" disabled>
+                            <option value="">Select District</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                <line x1="16" x2="16" y1="2" y2="6"/>
+                                <line x1="8" x2="8" y1="2" y2="6"/>
+                                <line x1="3" x2="21" y1="10" y2="10"/>
+                            </svg>
+                            Election Year
+                        </label>
+                        <select id="year-select" class="filter-select" disabled>
+                            <option value="">Select Year</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Leader Info Card (Hidden initially) -->
+            <div id="leader-card" class="leader-card animate-fade-in" style="display: none;">
+                <div class="leader-info">
+                    <div class="leader-avatar" id="leader-avatar">A</div>
+                    <div class="leader-details">
+                        <h2 id="leader-name">Leader Name</h2>
+                        <p class="leader-meta">
+                            <span id="leader-party">Party</span> • <span id="leader-year">Year</span> Election
+                        </p>
+                    </div>
+                    <div class="leader-stats" id="leader-stats">
+                        <span class="stat-completed"><span id="completed-count">0</span> Completed</span>
+                        <span class="stat-partial"><span id="partial-count">0</span> Partial</span>
+                        <span class="stat-pending"><span id="pending-count">0</span> Pending</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Bar (Hidden initially) -->
+            <div id="search-wrapper" class="search-wrapper" style="display: none;">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input type="text" id="search-input" class="search-input" placeholder="Search promises by keyword...">
+            </div>
+
+            <!-- Promises Container -->
+            <div id="promises-container" class="promises-container"></div>
+
+            <!-- Empty State -->
+            <div id="empty-state" class="empty-state">
+                <p>👆 Select a state, district, and year above to view promises.</p>
+            </div>
+
+            <!-- No Data State -->
+            <div id="no-data-state" class="empty-state" style="display: none;">
+                <p>No manifesto data available for this selection. Currently, data is available for Rajasthan only.</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- ==================== CONTACT PAGE ==================== -->
+    <div id="contact-page" class="page-content" style="display: none;">
+        <!-- Hero Section -->
+        <section class="hero-gradient about-hero">
+            <div class="container">
+                <h1 class="about-title">Contact Us</h1>
+                <p class="about-subtitle">Have feedback or want to contribute data? Reach out!</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="content-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info-section">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>contact@netapromisetracker.in</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Jaipur, Rajasthan, India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Contribute</h3>
+                                <p>Want to help add data for your state? Let us know!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="form-card">
+                        <div id="form-container">
+                            <h2 class="form-title">Send us a message</h2>
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <label class="form-label">Name</label>
+                                    <input type="text" class="form-input" id="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-input" id="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-textarea" id="message" rows="4" required></textarea>
+                                </div>
+
+                                <button type="submit" class="submit-btn">Send Message</button>
+                            </form>
+                        </div>
+
+                        <!-- Success Message (Hidden initially) -->
+                        <div id="success-container" class="success-message animate-fade-in" style="display: none;">
+                            <div class="success-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="success-title">Thank You!</h3>
+                            <p class="success-text">We'll get back to you soon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 Neta Promise Tracker. All rights reserved.</p>
+            <p>Making democracy transparent, one promise at a time.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="tracker.js"></script>
+    <!-- <script src="contact.js"></script> -->
+    
+    <!-- Page Navigation Script -->
+    <script>
+        function showPage(pageName) {
+            // Hide all pages
+            const allPages = document.querySelectorAll('.page-content');
+            allPages.forEach(page => {
+                page.style.display = 'none';
+            });
+
+            // Show selected page
+            const selectedPage = document.getElementById(pageName + '-page');
+            if (selectedPage) {
+                selectedPage.style.display = 'block';
+                window.scrollTo(0, 0);
+            }
+
+            // Update nav links
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Set active link
+            event.target.classList.add('active');
+        }
+
+        // Handle hamburger menu
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+
+            if (hamburger) {
+                hamburger.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
+
+            // Close menu when link is clicked
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    navMenu.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
